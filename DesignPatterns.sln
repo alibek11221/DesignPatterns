@@ -21,6 +21,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuilderLibrary", "BuilderLi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuilderLibraryTests", "BuilderLibraryTests\BuilderLibraryTests.csproj", "{D192B0AA-EB59-4C9F-9C77-F49C1C62E194}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Strategy", "Strategy", "{27163185-FDBD-4306-91DF-11E5DCD36A02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrategyLibrary", "StrategyLibrary\StrategyLibrary.csproj", "{E6C7274F-8064-4D5F-ADED-6D99BC37F6AE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,10 @@ Global
 		{D192B0AA-EB59-4C9F-9C77-F49C1C62E194}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D192B0AA-EB59-4C9F-9C77-F49C1C62E194}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D192B0AA-EB59-4C9F-9C77-F49C1C62E194}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6C7274F-8064-4D5F-ADED-6D99BC37F6AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6C7274F-8064-4D5F-ADED-6D99BC37F6AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6C7274F-8064-4D5F-ADED-6D99BC37F6AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6C7274F-8064-4D5F-ADED-6D99BC37F6AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -62,6 +70,7 @@ Global
 		{87641AC3-D812-4935-ADA4-C69998B9A230} = {0B1543E4-BEDD-453C-A9EF-B063059396DC}
 		{84D870FC-32A6-4B7F-A610-0F4B07CB19EB} = {E7F7D6B8-B3DB-4778-822E-F52F7FAFE247}
 		{D192B0AA-EB59-4C9F-9C77-F49C1C62E194} = {E7F7D6B8-B3DB-4778-822E-F52F7FAFE247}
+		{E6C7274F-8064-4D5F-ADED-6D99BC37F6AE} = {27163185-FDBD-4306-91DF-11E5DCD36A02}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FDF83D0B-AA45-49AC-9919-34C7CDCEF9A5}
