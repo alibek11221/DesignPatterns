@@ -15,17 +15,24 @@ namespace StrategyLibrary
                 throw new ArgumentNullException(nameof(filePath));
             this.filePath = filePath;
         }
-        private T GetData() 
+        private IEnumerable<T> GetData() 
         {
             BinaryFormatter formatter = new BinaryFormatter();
-            using (StreamReader reader = new StreamReader(filePath))
+            using (FileStream reader = new FileStream(filePath, FileMode.OpenOrCreate))
             {
-                
+                if (formatter.Deserialize(reader) is IEnumerable<T> output)
+                {
+                    return output;
+                }
+                else
+                {
+                    return null;
+                }
             }
         }
-        public T LoadData()
+        public IEnumerable<T> LoadData()
         {
-            throw new NotImplementedException();
+            return GetData();
         }
     }
 }

@@ -6,6 +6,6 @@ namespace StrategyLibrary
 {
     public interface IDataLoader<T> where T : DataModel
     {
-        T LoadData();
+        IEnumerable<T> LoadData();
     }
 }

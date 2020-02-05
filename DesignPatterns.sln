@@ -19,11 +19,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Builder", "Builder", "{E7F7
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuilderLibrary", "BuilderLibrary\BuilderLibrary.csproj", "{84D870FC-32A6-4B7F-A610-0F4B07CB19EB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuilderLibraryTests", "BuilderLibraryTests\BuilderLibraryTests.csproj", "{D192B0AA-EB59-4C9F-9C77-F49C1C62E194}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuilderLibraryTests", "BuilderLibraryTests\BuilderLibraryTests.csproj", "{D192B0AA-EB59-4C9F-9C77-F49C1C62E194}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Strategy", "Strategy", "{27163185-FDBD-4306-91DF-11E5DCD36A02}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrategyLibrary", "StrategyLibrary\StrategyLibrary.csproj", "{E6C7274F-8064-4D5F-ADED-6D99BC37F6AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StrategyLibrary", "StrategyLibrary\StrategyLibrary.csproj", "{E6C7274F-8064-4D5F-ADED-6D99BC37F6AE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Observer", "Observer", "{308354CA-9A58-473C-9A41-56080BFB7640}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
