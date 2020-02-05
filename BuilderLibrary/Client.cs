@@ -8,27 +8,29 @@ namespace BuilderLibrary
 {
     public class Client
     {
-        public void BuildByFluent(FluentBankBuilder builder, string name, DateTime wasCreated, string hm)
+        public Bank BuildByFluent(IFluentBankBuilder builder, string name, DateTime wasCreated, string hm)
         {
-            Bank bankWithBuildMethod = builder
+            Bank output = builder
                 .WithName(name)
                 .WasCreated(wasCreated)
                 .ManagedBy(hm)
                 .BuildBank();
-
+            return output;
             
         }
-        public void BuildByFluentImplicit(FluentBankBuilder builder, string name, DateTime wasCreated, string hm)
+        public Bank BuildByFluentImplicit(IFluentBankBuilder builder, string name, DateTime wasCreated, string hm)
         {
-            Bank bankImplicit = builder
+            Bank implicitOutput = builder
                 .WithName(name)
                 .WasCreated(wasCreated)
                 .ManagedBy(hm);
+            return implicitOutput;
         }
-        public void BuildByComplex(BankBuilder builder, BankBuilderDirector director)
+        public Bank BuildByComplex(BankBuilder builder, BankBuilderDirector director)
         {
             builder = new SberBankBuilder();
             director.Construct(builder);
+            return builder.Bank;
         }
     }
 }

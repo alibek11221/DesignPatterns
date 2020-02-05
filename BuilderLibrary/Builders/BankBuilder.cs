@@ -11,5 +11,6 @@ namespace BuilderLibrary.Builders
         public abstract void AddHeadManager();
 
         protected Bank ba;
+        public Bank Bank => ba;
     }
 }
